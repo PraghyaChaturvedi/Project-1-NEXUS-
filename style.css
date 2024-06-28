@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.screenDiv{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #000000, #181818, #282828, #3a3a3a, #4c4c4c);
+    flex-direction: column;
+}
+
+.innerDiv{
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.jumperSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+}
+
+.section{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    border: 2px solid white;
+}
+
+.loginSection{
+    height: 350px;
+    width: 300px;
+    background-color: rgb(246, 243, 243);
+    background-image: linear-gradient(to right, #5e5c5c,#fff8f8, #c6c1c1, #908d8d);
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hider{
+    display: none;
+}
+
+.mainDataInpSec{
+    height: 300px;
+    width: 600px;
+}
+
+
+.aniLeftToRight{
+    animation: ltr 1s ease-out 0s 1;
+}
+
+@keyframes ltr {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(280px);
+    }
+}
+
+.aniRighttoLeft{
+    animation: rtl 1s ease-out 0s 1;
+}
+
+@keyframes rtl {
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-280px);
+    }
+}
+
+.pause{
+    animation-play-state: paused;
+}
+
+.mar{
+    margin-left: 280px;
+}
+
+/* Designing part */
+.SmallText{
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.btn{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.upperText{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Dancing Script", cursive;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.data{
+    height: 45px;
+    width: 280px;
+    margin: 10px;
+}
+
+.btnd{
+    margin-left: 95px;
+    margin-top: 20px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.data:focus{
+    outline :none;  
+} 
+
+.data:hover{
+    border: 2px solid rgb(26, 25, 25);
+}
+
+.valid{
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+.head{
+    margin-top: -100px;
+    color: white;
+    font-family: "Great Vibes", cursive;
+}
+
+/* Responsivness */
+.responsiveJumper{
+    margin-top: 13px;
+    color:transparent;
+}
+
+
+@media (max-width:710px) {
+
+    .responsiveJumper{
+        color: black;
+    }
+
+    .jumperSection{
+        display: none;
+    }
+
+    .innerDiv{
+        border: none;
+    }
+
+    .mainDataInpSec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

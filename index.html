@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SignUp Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screenDiv">
+        <center><h1 class="head">Login & SignUp Page</h1></center>
+
+        <!-- Will contain all divs -->
+        <div class="innerDiv">
+
+            <!-- On click button animation will occur -->
+            <div class="jumperSection">
+                <div class="section">
+                    <div class="SmallText">Have Account ?</div>
+                    <div class="button loginBtn">
+                        <div class="btn">LOGIN</div>
+                    </div>
+                </div>
+
+                <!-- Talks about Login -->
+                <div class="section">
+                    <div class="SmallText">Don't Have Account ?</div>
+                    <div class="button signupBtn">
+                        <div class="btn ">SIGN UP</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Data Entering Section -->
+            <div class="mainDataInpSec ">
+
+                <div class="loginSection loginSlider">
+                    <div class="dataCollector">
+                        <div class="upperText"> LogIn </div>
+
+                        <form class="form" action="/">
+
+                                <input type="text" placeholder="  Name" required class="data name">
+                                <input type="password" placeholder="  Password" required class="data password">
+
+                            <div class="button btnd">
+                                <div class="btn"> <button class="valid" type="submit">SIGN UP </button></div>
+                            </div>  
+
+                        </form>
+                    </div>
+    
+                     
+
+                    <center><div class="responsiveJumper responsiveJumperLogin">To create new account?  Sign Up</div></center>
+                </div>
+    
+    
+                <div class="loginSection hider singnupSlider">
+                    <div class="dataCollector">
+                        <div class="upperText"> SignUp </div>
+
+                        <form class="form" action="/">
+
+                                <input type="email" placeholder="  Email" required class="data email">
+                                <input type="text" placeholder="  Name" required class="data name2">
+                                <input type="password" placeholder="  Password" required class="data password2">
+                            <div class="button btnd">
+                                <div class="btn"> <button class="valid" type="submit">SIGN UP </button></div>
+                            </div> 
+
+                        </form>
+                        
+                    </div>
+    
+                    
+
+                    <center><div class="responsiveJumper responsiveJumperSignup">Existing Account ? LogIn</div></center>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
